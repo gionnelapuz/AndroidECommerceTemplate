@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_out_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context="com.example.gin.orderingcompiledv1.checkOutPage">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_below="@id/username"
+        android:id="@+id/textOrderID"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDERID(I am just showing it for you to see):"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_below="@id/textOrderID"
+        android:id="@+id/orderID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_below="@id/orderID"
+        android:id="@+id/textEnterPhone"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER PHONE NUMBER:"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_below="@id/textEnterPhone"
+        android:id="@+id/philippines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+639"
+        android:textColor="#000"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/editPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:inputType="phone"
+        android:cursorVisible="false"
+        android:layout_alignBaseline="@+id/philippines"
+        android:layout_alignEnd="@+id/textEnterPhone"
+        android:layout_toEndOf="@+id/philippines" />
+
+    <TextView
+        android:layout_below="@id/editPhoneNumber"
+        android:id="@+id/textPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/philippines"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELIVERY LOCATION: "
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textChangeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHANGE LOCATION"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+               />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMOUNT TO PAY:"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/textView2" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textCheckOutTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/textViewItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW ITEMS"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/textCheckOutTotal"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ORDER"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CANCEL ORDER"/>
+
+        <TextView
+            android:id="@+id/latLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

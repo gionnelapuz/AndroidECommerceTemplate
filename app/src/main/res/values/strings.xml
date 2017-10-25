@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OrderingCompiledV1</string>
+
+    <string name="facebook_app_id">1450007298396142</string>
+    <string name="title_activity_maps_page">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_sample">sample</string>
+
+</resources>

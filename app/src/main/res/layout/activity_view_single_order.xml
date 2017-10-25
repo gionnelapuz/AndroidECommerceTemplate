@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_single_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.gin.orderingcompiledv1.viewSingleOrder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/textOrderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER ID:"
+            android:textSize="13dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/orderID"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="#000"
+            android:layout_below="@id/textOrderID"
+            android:layout_alignStart="@+id/textOrderID"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textOrderDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE AND TIME"
+            android:textSize="13dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginRight="40dp" />
+        <TextView
+            android:id="@+id/orderDateTime"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="#000"
+            android:layout_alignStart="@id/textOrderDateTime"
+            android:layout_below="@id/textOrderDateTime"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/textOrderUserNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE NUMBER:"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="13dp"/>
+        <EditText
+            android:id="@+id/orderUserNumber"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            android:textColor="#000"
+            android:inputType="phone"
+            android:enabled="false"
+            android:textSize="13dp"
+            android:layout_below="@id/textOrderUserNumber"
+            />
+
+        <TextView
+            android:id="@+id/textChangeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="CHANGE NUMBER"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/orderUserNumber"
+            android:layout_below="@id/textOrderUserNumber"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/textOrderLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELIVERY LOCATION:"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/orderLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="SHOW/CHANGE LOCATION"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/orderNameJSON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/textOrderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR ITEMS"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:id="@+id/listViewSingleOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

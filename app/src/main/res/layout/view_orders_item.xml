@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/listview_item_shape">
+
+        <TextView
+            android:id="@+id/textOrderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER ID: "
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/orderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="#000"
+            android:visibility="gone"
+            />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/textOrderUserNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE NUMBER"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/orderUserNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="#000"
+            android:layout_alignStart="@id/textOrderUserNumber"
+            android:layout_alignEnd="@+id/textOrderUserNumber"
+            android:layout_below="@+id/textOrderUserNumber"
+            />
+
+        <TextView
+            android:id="@+id/textDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE AND TIME ORDERED"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/orderDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="#000"
+            android:layout_below="@id/textOrderUserNumber"
+            android:layout_alignStart="@id/textDateTime"
+            android:layout_alignEnd="@id/textDateTime"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textOrderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/orderDateTime"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutViewOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/listview_item_shape"
+            android:layout_below="@+id/textOrderName"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/orderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:textColor="#000"
+                android:layout_below="@id/textOrderName"
+                />
+
+            <TextView
+                android:id="@+id/textOrderSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIZE"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/textOrderName"
+                />
+            <TextView
+                android:id="@+id/orderSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="#000"
+                android:layout_below="@id/textOrderName"
+                />
+            <TextView
+                android:id="@+id/textOrderQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QUANTITY"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/textOrderName"
+                />
+            <TextView
+                android:id="@+id/orderQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="#000"
+                android:layout_below="@id/textOrderName"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textTapViewFullDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW FULL ORDER DETAILS"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@+id/orderNameJSON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
