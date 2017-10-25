@@ -34,7 +34,8 @@ public class viewSingleOrder extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_single_order);
 
-
+        orderName = new ArrayList<>();
+        orderSize = new ArrayList<>();
         orderQuantity = new ArrayList<>();
 
         orderID = (TextView) findViewById(R.id.orderID);
