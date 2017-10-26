@@ -1,5 +1,5 @@
 ## Android E-Commerce Template
-Android project that I have created for E-Commerce applications
+Android project that I have created for E-Commerce applications, which focused more on Functionality.
 
 ## Screenshots of the Application
 ### Login Page & Menu Page
