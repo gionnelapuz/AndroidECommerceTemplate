@@ -15,7 +15,6 @@ develop E-Commerce Applications for Android.
 ![10 orders page](https://user-images.githubusercontent.com/33053218/32032084-d67d5c2e-ba37-11e7-867d-6448ccde9e98.png)
 ![11 view single order page](https://user-images.githubusercontent.com/33053218/32032086-d7cd2a0a-ba37-11e7-9bbc-1209b2ca0a9c.png)
 
-
 ## Developed By
 - Gionne Harley G. Lapuz - gionne.lapuz@gmail.com / www.linkedin.com/in/gionnelapuz
   
