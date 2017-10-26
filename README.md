@@ -1,6 +1,5 @@
 ## Android E-Commerce Template
-This is an E-Commerce Template that I have created to enhance my skills in android development and also serve as a basis if I need to 
-develop E-Commerce Applications for Android.
+This is an E-Commerce Template that I have created to enhance my skills in android development.
 
 ## Screenshots of the Application
 ### Login Page & Menu Page
