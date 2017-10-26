@@ -17,4 +17,6 @@ develop E-Commerce Applications for Android.
 
 
 ## Developed By
-Gionne Harley G. Lapuz - gionne.lapuz@gmail.com / linkedin.com/in/gionnelapuz
+- Gionne Harley G. Lapuz - gionne.lapuz@gmail.com / www.linkedin.com/in/gionnelapuz
+  
+  
