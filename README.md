@@ -1,6 +1,14 @@
 ## Android E-Commerce Template
 Android project that I have created for E-Commerce applications, which focused more on Functionality.
 
+## API Integrated within the Application
+- Google Sign-In
+- Facebook Sign-In
+- Google Maps Api
+
+## Network Libray used
+- Volley Networking Library
+
 ## Screenshots of the Application
 ### Login Page & Menu Page
 ![1 login page](https://user-images.githubusercontent.com/33053218/32030713-73130eac-ba2f-11e7-990a-e6c76d7df948.png)
