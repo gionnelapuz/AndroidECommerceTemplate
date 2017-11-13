@@ -1,7 +1,7 @@
 ## Android E-Commerce Template
-Android project that I have created for E-Commerce applications, which focused more on Functionality.
+Android project that I have created for E-Commerce applications.
 
-## API Integrated within the Application
+## API's Integrated within the Application
 - Google Sign-In
 - Facebook Sign-In
 - Google Maps Api
